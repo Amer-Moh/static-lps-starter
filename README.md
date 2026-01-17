@@ -1,4 +1,4 @@
-# Simple Landing Page Starter
+# Custom Landing Page Starter
 
 ## Folder Structure
 
