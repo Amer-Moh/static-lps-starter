@@ -1,0 +1,29 @@
+{
+	"name": "StaticLPs",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"copy:vendors": "node -e \"require('fs').copyFileSync('assets/vendors/embla-carousel.umd.js', 'dist/js/embla-carousel.umd.js')\"",
+		"build": "wp-scripts build",
+		"start": "wp-scripts start",
+		"build:js": "wp-scripts build",
+		"build:scss": "wp-scripts build",
+		"start:js": "wp-scripts start",
+		"start:scss": "wp-scripts start",
+		"check-engines": "wp-scripts check-engines",
+		"check-licenses": "wp-scripts check-licenses",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"lint:pkg-json": "wp-scripts lint-pkg-json"
+	},
+	"author": "Amer Mohammed",
+	"license": "GPL-3.0",
+	"devDependencies": {
+		"@wordpress/scripts": "^30.17.0",
+		"browserslist": "^4.25.0",
+		"sass": "^1.89.1",
+		"webpack-remove-empty-scripts": "^2.0.0"
+	}
+}

@@ -1,0 +1,26 @@
+/* ==============================
+   Breakpoints (mobile-first)
+   ============================== */
+
+   $bp-xs: 390px;
+   $bp-sm: 430px;
+   $bp-md: 768px;
+   $bp-lg: 1024px;
+   $bp-xl: 1288px;
+   $bp-xxl: 1700px;
+   
+   /* Up (min-width) */
+   @mixin xs-up { @media (min-width: $bp-xs) { @content; } }
+   @mixin sm-up { @media (min-width: $bp-sm) { @content; } }
+   @mixin md-up { @media (min-width: $bp-md) { @content; } }
+   @mixin lg-up { @media (min-width: $bp-lg) { @content; } }
+   @mixin xl-up { @media (min-width: $bp-xl) { @content; } }
+   @mixin xxl-up { @media (min-width: $bp-xxl) { @content; } }
+   
+   /* Down (max-width) */
+   @mixin xs-down { @media (max-width: $bp-xs) { @content; } }
+   @mixin sm-down { @media (max-width: $bp-sm) { @content; } }
+   @mixin md-down { @media (max-width: $bp-md) { @content; } }
+   @mixin lg-down { @media (max-width: $bp-lg) { @content; } }
+   @mixin xl-down { @media (max-width: $bp-xl) { @content; } }
+   

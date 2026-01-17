@@ -1,0 +1,47 @@
+// Reset styles placeholder
+// Add CSS reset/normalize styles here
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-white);
+    font-family: var(--primary-font-family);
+    font-size: 1.4rem;
+    color: var(--color-black);
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+input,
+textarea,
+select,
+button {
+    font: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    font-size: 0;
+    display: block;
+    max-width: 100%;
+}

@@ -1,0 +1,141 @@
+@use "../abstracts/mixins" as *;
+
+// ==============================
+// Utility Classes
+// ==============================
+
+// Visibility utilities
+.hidden-sm {
+    // Hidden on mobile by default
+    display: none;
+
+    // Visible on medium screens and up
+    @include md-up {
+        display: block;
+    }
+}
+
+.hidden-md {
+    // Visible on mobile by default
+    display: block;
+
+    // Hidden on medium screens and up
+    @include md-up {
+        display: none;
+    }
+}
+
+.hidden-lg {
+    // Visible on mobile by default
+    display: block;
+
+    // Hidden on large screens and up
+    @include lg-up {
+        display: none;
+    }
+}
+
+// Flex utilities
+.is-flex {
+    display: flex;
+
+    &:not(.flex-column) {
+        // Wrap by default on mobile
+        flex-wrap: wrap;
+
+        // No wrap on medium screens and up
+        @include md-up {
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+.is-flex-md {
+    display: flex;
+
+    &:not(.flex-column) {
+        // Wrap by default on mobile
+        flex-wrap: wrap;
+
+        // No wrap on medium screens and up
+        @include md-up {
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+.is-flex-lg {
+    display: flex;
+
+    &:not(.flex-column) {
+        // Wrap by default on mobile and medium
+        flex-wrap: wrap;
+
+        // No wrap on large screens and up
+        @include lg-up {
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}
+
+// Justify content
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+// Align items
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+.align-stretch {
+    align-items: stretch;
+}

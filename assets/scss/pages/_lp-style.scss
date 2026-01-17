@@ -1,0 +1,13 @@
+@use "../abstracts/mixins" as *;
+
+body {
+	background-color: #f00;
+
+	@include sm-up {
+		background-color: #0f0;
+	}
+
+	@include md-up {
+		background-color: #00f;
+	}
+}

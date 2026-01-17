@@ -1,0 +1,6 @@
+# Ignore build outputs
+dist/
+build/
+*.min.css
+*.min.js
+
