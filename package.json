@@ -24,6 +24,6 @@
 		"@wordpress/scripts": "^30.17.0",
 		"browserslist": "^4.25.0",
 		"sass": "^1.89.1",
-		"webpack-remove-empty-scripts": "^2.0.0"
+		"webpack-remove-empty-scripts": "^1.1.1"
 	}
 }
