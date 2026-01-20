@@ -4,27 +4,29 @@
 	// ==============================
 	// Colors
 	// ==============================
-	--color-primary: #241ec6;
-	--color-primary-2: #002989;
-	--color-secondary: #ffbd86;
-	--color-secondary-2: #9e5d37;
-	--color-secondary-3: #fff5eb;
+	--color-primary: #0059B2;
+	--color-primary-2: #241ec6;
+	--color-secondary: #F39E00;
+
+	--color-dark: : #1B1B1B;
 	--color-black: #0f172a;
 	--color-white: #fff;
-
+	--color-disabled: #707070;
+	--color-white-19: #FFFFFF30;
 	// ==============================
 	// Typography
 	// ==============================
-	--primary-font-family: "Arial", system-ui, sans-serif; //Use for Content
-	--secondary-font-family: "Arial", system-ui, sans-serif; //Use for Titles
+	--primary-font-family: "Arial", sans-serif; //Use for Content
+	--secondary-font-family: "Arial", sans-serif; //Use for Titles
 	--font-size-base: 16px;
-	--line-height-body: 120%;
+	--line-height-body: 1.2;
 
-	// Body font sizes
-	--font-size-body-sm: 1.4rem;
-	--font-size-body-md: 2rem;
-	--font-size-body: var(--font-size-body-md);
-	--font-size-body-small: var(--font-size-body-sm);
+	// Default font sizes
+	--font-size-body-sm: 1.6rem;
+	--font-size-body-md: 1.8rem;
+	--font-size-body-lg: 2.4rem;
+	--font-size-body: var(--font-size-body-sm);
+
 
 	// Small text font sizes
 	--font-size-s-sm: 1.4rem;
@@ -37,23 +39,27 @@
 	--font-size-btn: var(--font-size-btn-sm);
 
 	// Heading font sizes
-	--font-size-h1-sm: 4rem;
-	--font-size-h1-md: 6rem;
-	--font-size-h1-lg: 8rem;
+	--font-size-h1-sm: 3.2rem;
+	--font-size-h1-md: 4rem;
+	--font-size-h1-lg: 6rem;
 	--font-size-h1: var(--font-size-h1-sm);
-	--font-size-h2-sm: 3rem;
-	--font-size-h2-md: 4rem;
-	--font-size-h2-lg: 5rem;
+	--font-size-h2-sm: 2.2rem;
+	--font-size-h2-md: 2.4rem;
+	--font-size-h2-lg: 2.8rem;
 	--font-size-h2: var(--font-size-h2-sm);
 
 	// ==============================
 	// Spacing
 	// ==============================
-	--spacing-block-sm: 2rem;
+	--spacing-block-sm: 4rem;
 	--spacing-block-md: 4rem;
 	--spacing-block-lg: 6rem;
 	--spacing-block: var(--spacing-block-sm);
 
+	--inner-spacing-sm: 2rem;
+	--inner-spacing-md: 2.5rem;
+	--inner-spacing-lg: 3rem;
+	--inner-spacing: var(--inner-spacing-sm);
 	// ==============================
 	// Border
 	// ==============================
@@ -65,18 +71,21 @@
 	// Responsive Overrides
 	// ==============================
 	@include md-up {
-		--spacing-block: var(--spacing-block-md);
-		--font-size-body-small: var(--font-size-body-md);
+		--font-size-body: var(--font-size-body-md);
+		--font-size-s: var(--font-size-s-sm);
 		--font-size-h1: var(--font-size-h1-md);
 		--font-size-h2: var(--font-size-h2-md);
+		--inner-spacing: var(--inner-spacing-md);
 	}
 
 	@include lg-up {
-		--spacing-block: var(--spacing-block-lg);
+		--font-size-body: var(--font-size-body-lg);
 		--font-size-s: var(--font-size-s-lg);
 		--font-size-btn: var(--font-size-btn-lg);
 		--border-radius: var(--border-radius-lg);
 		--font-size-h1: var(--font-size-h1-lg);
 		--font-size-h2: var(--font-size-h2-lg);
+		--spacing-block: var(--spacing-block-lg);
+		--inner-spacing: var(--inner-spacing-lg);
 	}
 }

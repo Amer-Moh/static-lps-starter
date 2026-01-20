@@ -1,6 +1,7 @@
 // Typography styles placeholder
 // Add typography styles here
 
+@use "../abstracts/variables" as *;
 
 h1,
 h2,
@@ -29,8 +30,12 @@ h4,
 h5,
 h6 {
 	font-family: var(--secondary-font-family);
-	font-size: var(--color-black);
-	line-height: 1.11;
+	font-size: var(--font-size-body);
+	line-height: 1.2;
+}
+
+strong {
+	font-weight: 500;
 }
 
 p,
@@ -40,11 +45,7 @@ button,
 span,
 table td,
 table th {
-	font-size: var(--color-black);
+	font-size: var(--font-size-body);
 	line-height: 1.42;
 	font-weight: 400;
-}
-
-strong {
-	font-weight: 500;
 }
